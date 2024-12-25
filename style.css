@@ -75,7 +75,8 @@ transition: .3s;
 }
   body{
     font-family: 'Outfit';
-    background: linear-gradient(rgb(83, 66, 28), purple)
+    background: linear-gradient(rgb(83, 66, 28), purple);
+      overflow-x: hidden;
   }
   .contact_container{
     height: 100vh;
