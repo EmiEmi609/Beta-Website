@@ -1,0 +1,698 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    flex-direction: row;
+    
+  }
+body{
+  overflow-x: hidden;
+  
+}
+    .bk_h1{
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow-x: hidden;
+     
+    }
+    .bk_h1::before {
+      content: '';
+      background-image: url("https://i.pinimg.com/736x/59/65/30/5965308854bdc1b234ee915002a9bd2b.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: end;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      opacity:0.7;
+      overflow-x: hidden;
+    }
+  
+    .h1{
+      font-size: 80px;
+      font-family: 'Trebuchet';
+      text-align: center;
+      position: relative;
+    }
+    
+    .header{
+      font-family: 'Trebuchet';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding:20px 100px;
+      background: #97BCC7;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+      overflow-x: hidden;
+    }
+    .logo{
+      font-size: 32px;
+      color:white;
+      text-decoration: none;
+      font-weight: 700;
+      overflow-x: hidden;
+      
+    }
+    .logo_image{
+      width: 50px;
+      height: auto;
+      border: white solid 2px;
+      border-radius: 10px;
+      
+    }
+    .navbar a {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-weight:500;
+    text-decoration: none;
+    margin-left:40px;
+    overflow-x: hidden;
+  }
+  .navbar a::before{
+  content:'';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: .3s;
+  overflow-x: hidden;
+  }
+  .navbar a:hover::before{
+    width: 100%;
+    overflow-x: hidden;
+  
+  /*.general_bod{
+    display:flex;
+    flex-wrap: wrap;
+  }*/
+  }
+  .boxes{
+    flex-direction: row;
+    width: 100vw;
+    margin: 0 auto;
+      max-height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      position: relative;
+     font-family: Trebuchet;
+     flex-wrap: wrap;
+    
+  }
+  :visited{
+    color:azure;
+  }
+  :hover{
+    color:black
+  }
+  a:active{
+    color: red;
+  }
+  a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+  }
+  .b1{
+  background-color: #003060;
+  color: white;
+  padding: 50px;
+  font-size: 45px;
+  flex-basis: 200px; 
+  flex-grow: 1;
+  flex-shrink: 5;
+  text-align: center;
+  flex-wrap: wrap;
+  
+  }
+  .b2{
+  background-color: #055C9D;
+  color: white;
+  padding: 50px;
+  font-size: 45px;
+  flex-basis: 200px; 
+  flex-grow: 1;
+  flex-shrink: 5;
+  text-align: center;
+  
+  }
+  .b3{
+  display: flex;
+  background-color: #0E86D4;
+  color: white;
+  padding: 50px;
+  font-size: 45px;
+  flex-basis: 200px; 
+  flex-grow: 1;
+  flex-shrink: 5;
+  text-align: center;
+  justify-content: center;
+  }
+    /*The boxes are right above thsi code*/
+  /*--------------------------------------------------------------------------------*/
+  .container_vid {
+    width: 100%;
+    height: 400px; /* Specify height for the video section */
+    position: relative; /* Positioning for the video and content layering */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Video styling */
+.background-clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Behind the content */
+    width: 100%; /* Adjust to the width of the container */
+    height: 100%; /* Adjust to the height of the container */
+    object-fit: cover; /* Ensure the video covers the area properly */
+}
+
+/* Content inside the video section */
+.content_vid {
+    text-align: center;
+    color: white; /* White text for contrast */
+    z-index: 1; /* Make sure content is above video */
+    padding: 20px;
+    margin: 0px;
+    opacity: 0.8;
+}
+
+
+/*--------------------------------------------------------------------------------*/
+
+  .hin {
+  margin-top: 0px;
+  padding: 20px;
+  position: relative;
+  text-align: start;
+  background-color: #97BCC7;
+  z-index: 80;
+  overflow-x: hidden;
+  color: aliceblue;
+  }
+  /*fix the sizing of the background*/
+ 
+  .sh1{
+    text-transform: uppercase;
+    padding: 30px, 5px;
+    width: 200px;
+    overflow-x: hidden;
+  
+  }
+  .h2p{
+     padding-left: 0px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     overflow-x: hidden;
+  }
+  .p_int{
+   padding-left: 5px;
+   font-size: 20px;
+   overflow-x: hidden;
+  }
+  .second_in{
+  margin: 0px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  background-color: #006884;
+  min-width: 50vh;
+  max-width: 4000vh;
+  width: 3000px;
+  z-index: 79;
+  overflow-x: hidden;
+  }
+  #offer{
+  padding: 20px;
+  background-color: #006884;
+  justify-content: center;
+  text-align: center;
+  font-family: Trebuchet;
+  display: flex;
+    flex-direction: row; /* This makes the flexbox layout in rows */
+    width: 100vw;
+    overflow-x: hidden;
+    color: aliceblue;
+  
+  }
+  .flex-grid-thirds {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%; /* Full width */
+    background-color: #5b9fd6;
+    padding: 10px 0;
+    overflow: hidden;
+  }
+  
+  .flex-grid-thirds .col {
+    width: 32%; /* Each column takes up 32% of the space */
+    padding: 0;
+    background: rgba(248, 246, 246, 0.726);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 300px; /* Minimum height for each column */
+  }
+  
+  .col img {
+    max-width: 100%; /* Make the image responsive to the container */
+    max-height: 100%; /* Ensure the image does not overflow */
+    object-fit: cover; /* Image covers the container space without distortion */
+    display: block;
+  }
+  
+  
+  .responsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; /* Ensures content fills container width */
+    max-height: 100%; /* Ensures content fills container height */
+    width: auto;
+    height: auto;
+    overflow: hidden;
+  }
+ 
+  .titles1 {
+  
+    font: bold;
+    font-weight: bold;
+    font-size: 25px;
+    background:none;
+    background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-size: contain;
+      width: 100px;
+      height: 200px;
+      max-width:400px;
+      max-height:200px;
+      min-width:200px;
+      min-height:50px;
+      overflow-x: hidden;
+      
+     
+     
+  }
+  .titles2 {
+  
+    font: bold;
+    font-weight: bold;
+    font-size: 25px;
+    background:none;
+    background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-size: contain;
+      width: 100px;
+      height: 200px;
+      max-width:400px;
+      max-height:200px;
+      min-width:200px;
+      min-height:50px;
+      overflow-x: hidden;
+      text-transform: capitalize;
+  }
+  .titles3 {
+    font: bold;
+    font-weight: bold;
+    font-size: 25px;
+    background:none;
+    background-repeat: no-repeat;
+    position: relative;
+    justify-items: center;
+    background:none;
+      width: 200px;
+      height: 200px;
+      max-width:400px;
+      max-height:200px;
+      min-width:200px;
+      min-height:50px;
+      text-transform: capitalize;
+  }
+  .title_hv:hover{
+    color:#006884;
+
+  }
+  .title_hv{
+    color: black;
+    text-transform: uppercase;
+  }
+  .socialmedia {
+  display: flex;
+  color: white;
+  margin: 0px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  width: auto;
+  background-color:#006884;
+  min-width: 50vh;
+  max-width: 4000vh;
+  width: 3000px;
+  z-index: 79;
+  overflow-x: hidden;
+  }
+  .social_medias {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  width: auto;
+  background-color: #053D57;
+  min-width: 50vh;
+  max-width: 4000vh;
+  width: 3000px;
+  z-index: 79;
+    margin: 0px;
+  padding: 20px;
+  overflow-x: hidden;
+  }
+  .sm {
+    border-radius: 25% 10%;
+    width: 15%;
+    height: 100%;
+  }
+  .imglink {
+    width: 90vw; 
+    margin:0% auto;
+    padding: 0px;
+    height: auto;
+    display: block; /* Ensures there is no space around the image */
+    
+  }
+  /*-----------------second page below------------------------*/
+  
+  .hin_p2 {
+  
+  padding: 20px;
+  position: relative;
+  text-align: start;
+  background-color:rgb(100, 116, 133);
+  z-index: 80;
+  color: black;
+  font-weight: 200;
+  }
+  .h1_p2{
+  margin-top: 65px;
+  padding: 20px;
+  text-align: center;
+  justify-items: center;
+  font-size: 50px;
+  background-color: #003060;
+  color: white;
+  }
+  .sh1_p2{
+    justify-items: center;
+    text-align: center;
+    background-color: #164d77;
+    color: white;
+  }
+  .socialmedia_p2 {
+    flex-direction: row; /* This makes the flexbox layout in rows */
+    width: 100vw;
+    background-color: black;
+    color: white;
+    justify-items: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px
+  }
+  /* Your original code remains unchanged here */
+
+/* Only adding responsive tweaks below */
+
+/* Ensure header does not overlap content on mobile */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo_image {
+    width: 40px; /* Smaller logo for mobile */
+  }
+
+  .navbar a {
+    font-size: 16px; /* Smaller font size for navbar links */
+    margin-left: 0;
+    padding: 5px 0;
+  }
+
+  .boxes {
+    flex-direction: column;
+    align-items: center;  /* Stack the boxes vertically on smaller screens */
+  }
+
+  .b1, .b2, .b3 {
+    max-width: 90%; /* Allow boxes to take up more width on mobile */
+    font-size: 4vw; /* Adjust font size */
+    margin-bottom: 10px; /* Space between boxes */
+  }
+
+  .container_vid {
+    height: 250px; /* Make the video container smaller on mobile */
+  }
+
+  .h1 {
+    font-size: 6vw; /* Scale the heading size down for smaller screens */
+  }
+
+  .flex-grid-thirds {
+    flex-direction: column; /* Stack the grid columns vertically */
+    align-items: center;
+  }
+
+  .col {
+    max-width: 100%;
+    margin-bottom: 20px; /* Add space between columns on mobile */
+  }
+
+  .socialmedia {
+    flex-direction: column; /* Stack social media icons vertically */
+    align-items: center;
+  }
+
+  .sm {
+    width: 30%; /* Smaller size for social media icons */
+    margin: 5px; /* Add margin for spacing */
+  }
+
+  .hin_p2 {
+    font-size: 1rem; /* Make the text smaller for mobile */
+  }
+
+  .h1_p2 {
+    font-size: 2.5rem; /* Adjust heading size */
+  }
+
+  .sh1_p2 {
+    font-size: 2rem;
+  }
+}
+
+/* Further adjust for very small screens (e.g., phones in portrait mode) */
+@media (max-width: 480px) {
+  .b1, .b2, .b3 {
+    font-size: 5vw; /* Further reduce font size on very small screens */
+    max-width: 95%; /* Ensure boxes take up most of the width */
+    margin-bottom: 15px; /* Add space between boxes */
+  }
+
+  .sh1 {
+    font-size: 4vw; /* Adjust heading for small screens */
+  }
+
+  .col {
+    max-width: 100%;
+    margin-bottom: 20px; /* Add space between columns */
+  }
+
+  .sm {
+    width: 35%; /* Reduce size of social media icons even more */
+  }
+
+  .hin_p2 {
+    font-size: 0.9rem; /* Smaller text for mobile */
+  }
+
+  .h1_p2 {
+    font-size: 2rem;
+  }
+
+  .sh1_p2 {
+    font-size: 1.8rem;
+  }
+}
+/* Add specific styles for very small screens, preventing content from disappearing */
+
+/* General mobile adjustments */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .logo_image {
+    width: 40px;
+  }
+
+  .navbar a {
+    font-size: 16px;
+    margin-left: 0;
+    padding: 5px 0;
+  }
+
+  .boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .b1, .b2, .b3 {
+    max-width: 90%;
+    font-size: 4vw;
+    margin-bottom: 10px;
+  }
+
+  .container_vid {
+    height: 250px;
+    width: 100%; /* Ensures video fits within screen */
+  }
+
+  .h1 {
+    font-size: 6vw;
+  }
+
+  .flex-grid-thirds {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .socialmedia {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sm {
+    width: 30%;
+    margin: 5px;
+  }
+
+  .hin_p2 {
+    font-size: 1rem;
+  }
+
+  .h1_p2 {
+    font-size: 2.5rem;
+  }
+
+  .sh1_p2 {
+    font-size: 2rem;
+  }
+}
+
+/* Preventing content cut off on very small screens (portrait mode phones) */
+@media (max-width: 480px) {
+  .b1, .b2, .b3 {
+    font-size: 5vw;
+    max-width: 95%;
+    margin-bottom: 15px;
+  }
+
+  .sh1 {
+    font-size: 4vw;
+  }
+
+  .col {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .sm {
+    width: 35%;
+  }
+
+  .hin_p2 {
+    font-size: 0.9rem;
+  }
+
+  .h1_p2 {
+    font-size: 2rem;
+  }
+
+  .sh1_p2 {
+    font-size: 1.8rem;
+  }
+
+  /* Fix for very small screens, prevent content overflow */
+  body {
+    overflow-x: auto; /* Allows horizontal scrolling if necessary */
+  }
+
+  .container, .boxes, .flex-grid-thirds {
+    width: 100%; /* Make sure these containers don't overflow */
+    box-sizing: border-box;
+  }
+}
+
+/* Apply min-width for maintaining layout integrity */
+@media (max-width: 400px) {
+  .header {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .logo_image {
+    width: 35px;
+  }
+
+  .navbar a {
+    font-size: 14px; /* Reduce font size for smaller screens */
+  }
+
+  .container_vid {
+    height: 200px; /* Reduce video height on very small screens */
+  }
+
+  .boxes {
+    padding: 5px; /* Prevent boxes from shrinking too much */
+  }
+
+  .b1, .b2, .b3 {
+    font-size: 6vw; /* Scale down font size even more */
+    max-width: 100%; /* Allow boxes to expand and fill available space */
+  }
+
+  .sm {
+    width: 40%; /* Reduce social media icon sizes further */
+  }
+}
