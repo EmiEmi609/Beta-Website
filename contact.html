@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" id="options">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedgo</title>
+    <link rel="stylesheet" href="contact_style.css">
+  </head>
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJM5YBPDM3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-HJM5YBPDM3');
+  </script>
+  
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img src="Logo_sqr_dimentions.png" alt="wedgo" class="logo_image">
+        </a>
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact_section">
+      <div class="container">
+        <div class="contact_container">
+          <!-- Contact Form -->
+          <div class="contact-left">
+            <h2>Get in Touch</h2>
+            <hr>
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="c6f253dd-abf4-4383-a4c8-3af47e152817">
+              <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+              <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+              <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+              <button type="submit" class="submit-btn">Submit</button>
+            </form>
+          </div>
+          
+          <!-- Contact Image -->
+          <div class="contact-right">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/013/869/695/small_2x/neural-network-illustration-png.png" alt="Neural Network Illustration" class="contact-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <h2 class="socialmedia_p2">E.E.INC.</h2>
+    </footer>
+  </body>
+</html>
