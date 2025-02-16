@@ -13,3 +13,4 @@ function moveSlide(direction) {
 }
 
 updateSlide(); // Initial call
+
